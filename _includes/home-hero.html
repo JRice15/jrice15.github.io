@@ -47,6 +47,12 @@
         <i class="fa fa-angle-down fa-3x"></i>
       </a>
 
+      {% for post in paginator.posts %}
+        {% include post-content.html %}
+      {% endfor %}
+  
+      {% include pagination.html %}
+
     </div>
 
   </div>
