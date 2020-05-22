@@ -17,7 +17,7 @@ title: "Hello! I'm Julian Rice"
 email: 'jrice15@calpoly.edu'
 description: "and I love to code!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jrice15.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://jrice15.github.io/me" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
 github_username: 'jrice15'
 medium_username: ''
@@ -37,13 +37,13 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: true
+  debug: false
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
   collection: 'posts'
 
   # How many objects per paginated page, used to be `paginate` (default: 0, means all)
-  per_page: 0
+  per_page: 10
 
   # The permalink structure for the paginated pages (this can be any level deep)
   permalink: '/page/:num/' # Pages are index.html inside this folder (default)
