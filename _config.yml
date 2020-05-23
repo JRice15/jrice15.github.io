@@ -17,7 +17,7 @@ title: "Hello! I'm Julian Rice"
 email: 'jrice15@calpoly.edu'
 description: "and I love to code!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jrice15.github.io/me" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://jrice15.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: ''
 github_username: 'jrice15'
 medium_username: ''
