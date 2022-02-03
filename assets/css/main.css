@@ -775,7 +775,8 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
+  background-color: #ebebeb;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -826,7 +827,7 @@ pre code {
   word-break: break-all;
 }
 
-table {
+/* table {
   border: 1px solid #aaa;
   background-color: #eee;
   width: 100%;
@@ -881,7 +882,7 @@ table tfoot {
 
 table tfoot td {
   font-size: 14px;
-}
+} */
 
 .wrapper {
   max-width: 1250px;
@@ -1497,7 +1498,155 @@ a.newer-posts:hover {
 }
 
 
+/* New Things */
+
 .dash-seperator {
   border-bottom: 1px dashed #a0a0a0;
   width: 100%;
+}
+
+.section-box {
+  width: 100%;
+  padding: 5px;
+}
+
+.section-title {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+          box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+  margin-bottom: 15px;
+  margin-top: 15px;
+  box-shadow: rgba(0,0,0,0.2) 1px 1px 1px, inset rgba(0,0,0,0.2) 1px 1px 2px;
+}
+
+.section-title.section-blue {
+  border: 2px solid rgba(59, 84, 196, 0.6);
+}
+
+.section-title.section-green {
+  border: 2px solid rgba(59, 196, 70, 0.6);
+}
+
+.section-title.section-orange {
+  border: 2px solid rgba(224, 143, 37, 0.6);
+}
+
+.educ-content,
+.about-content {
+  width: 100%;
+  padding: 5px 30px;
+}
+
+.educ-content table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  /* horizontal space */
+  /* padding: 0 20px; */
+}
+
+.educ-content tr {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.educ-content td {
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  vertical-align: top;
+  width: 100%;
+}
+
+/* first column */
+.educ-content td:first-child{
+  width: 35%;
+  overflow: hidden;
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  color: #333030;
+  font-weight: 700;
+  /* margin: 0 0 10px; */
+  /* position: relative; */
+}
+
+/* last column */
+.educ-content td:last-child{
+  width: 48%;
+  overflow: hidden;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  text-align: right;
+  white-space: nowrap;
+}
+
+
+.arrow-bullets {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.arrow-bullets li {
+  padding: 0 20px;
+}
+
+.arrow-bullets li {
+    position: relative;
+}
+
+.arrow-bullets li::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 8px;
+    border-color: transparent transparent transparent #333030;
+    top: 9px;
+    left: 2px;
+}
+
+.about-nav {
+  margin: auto;
+  width: 60%;
+}
+
+.about-nav table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  /* margin: 0 40px 0 40px; */
+}
+.about-nav tr {
+  width: 100%;
+}
+
+.about-nav td {
+  position: relative;
+  padding: 1px;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-style: italic;
+}
+
+.about-nav img:hover {
+  -webkit-transform: translate(0px, -2px);
+      -ms-transform: translate(0px, -2px);
+          transform: translate(0px, -2px);
+}
+
+.about-nav img {
+  height: 70px;
+  /* width: 100px */
 }

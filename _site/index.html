@@ -64,6 +64,12 @@
 	<link rel="stylesheet" href="/cv/assets/fonts/font-awesome/css/font-awesome.min.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="/cv/assets/css/main.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/cv/assets/js/scroll.js"></script>
+
+  
 </head>
 
 <body>
@@ -79,7 +85,7 @@
       <div class="author-name">Julian Rice</div>
       
         <div class="sidebar-about">
-          <p>Deep Learning for Earth and Atmospheric Sciences</p>
+          <p>Deep Learning Researcher for Earth and Atmospheric Sciences</p>
         </div>
       
     </div>
@@ -107,83 +113,209 @@
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
 
+<!-- About -->
 <div class="content-box clearfix">
-  <article class="article-page">
-    <div class="page-content">
-      <div class="wrap-content">
-        <header class="header-page">
-          <h1 class="page-title">About Me</h1>
-        </header>
-      </div> <!-- End Wrap Content -->
-    </div> <!-- End Page Content -->
-  </article> <!-- End Article Page -->
+  <div class="section-title section-blue">
+    <header class="header-page">
+      <h1 class="page-title">About Me</h1>
+    </header>
+
+    <div class="about-content">
+      <p>
+        Hi! I am a Computer Science Master's student at Cal Poly SLO (aka California
+        Polytechnic State University, San Luis Obispo). I specialize in Deep Learning,
+        particularly applications in Earth and Atmospheric Sciences. My passions
+        for programming, music, and the environment often intertwine in my projects. Click
+        below to learn more!
+      </p>
+
+      <div class="about-nav">
+          <table>
+          <tr>
+            <td id="ed-button">
+              <img src='/cv/assets/img/education.png'/>
+            </td>
+            <td id="work-button">
+              <img src='/cv/assets/img/work-exp.png'/>
+            </td>
+            <td id="proj-button">
+              <img src='/cv/assets/img/projects.png'/>
+            </td>
+          </tr>
+          <tr>
+            <td>Education</td>
+            <td>Work Experience</td>
+            <td>Projects</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
 </div>
   
 <div class="dash-seperator"></div>
 
-<!-- <div class="page-footer">
-</div> -->
+<!-- Education -->
+<div id="education" class="content-box clearfix">
 
-<div class="content-box clearfix">
-  <article class="article-page">
-    <div class="page-content">
-      <div class="wrap-content">
-        <header class="header-page">
+  <div class="section-title section-green">
+    <header class="header-page">
+      <h1 class="page-title">Education</h1>
+    </header>
+
+    <div class="educ-content">
+      <table>
+        <tr>
+          <td>Master's, CSC</td>
+          <td>California Polytechnic State University, SLO
+            <ul class="arrow-bullets">
+              <li>GPA: 4.00</li>
+            </ul>
+            Selected Coursework: 
+            <ul class="arrow-bullets">
+              <li>CSC 580 &#8211; Artificial Intelligence</li>
+              <li>CSC 566 &#8211; Advanced Topics in Data Mining</li>
+              <li>CSC 569 &#8211; Distributed Computing</li>
+            </ul>
+          </td>
+          <td>Fall 2021 &#8212; &shy;<wbr> Summer 2022</td>
+        </tr>
+        <tr>
+          <td>B.Sc., CSC</td>
+          <td>
+            California Polytechnic State University, SLO
+            <ul class="arrow-bullets">
+              <li>GPA: 3.96</li>
+              <li>President's List every year</li>
+            </ul>
+            Selected Coursework:
+            <ul class="arrow-bullets">
+              <li>CSC 428 &#8211; Computer Vision</li>
+              <li>STAT 334 &#8211; Applied Linear Models</li>
+              <li>CSC 482 &#8211; Natural Language Processing</li>
+              <li>ISLA 123 &#8211; Science, Technology, & Society</li>
+            </ul>
+          </td>
+          <td>Fall 2018 &#8212; &shy;<wbr> Fall 2021</td>
+        </tr>
+        <tr>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="dash-seperator"></div>
+
+
+<!-- Projects -->
+<div id="projects" class="content-box clearfix">
+
+  <div class="section-title">
+    <header class="header-page">
+      <h1 class="page-title">Projects</h1>
+    </header>
+  </div>
+
   
     <article class="post">
     
+        <a class="post-thumbnail" style="background-image: url(/cv/assets/img/trees-pred.png)" href="/cv/ms-thesis/"></a>
     
-    <div class="post-content">
-    <h2 class="post-title"><a href="/cv/work2/">work 2</a></h2>
-    <p>2 hmm
+    <div class="post-content" onclick="location.href='/cv/ms-thesis/';">
+        <h2 class="post-title">
+            <a href="/cv/ms-thesis/">Deep Learning for Trees Prediction</a>
+        </h2>
+        <p>Project yes test tes tse t se t se t se t se t se...</p>
+        <span class="post-date">
+            2020, Oct 02&nbsp;&nbsp;&nbsp;—&nbsp;
+        </span>
+        <!-- <span class="post-words">
+            
+            
+                1 minute read
+            
+        </span> -->
+    </div>
+</article>
+
+  
+    <article class="post">
+    
+        <a class="post-thumbnail" style="background-image: url(/cv/assets/img/i-rest.jpg)" href="/cv/how-i-rest-from-work/"></a>
+    
+    <div class="post-content" onclick="location.href='/cv/how-i-rest-from-work/';">
+        <h2 class="post-title">
+            <a href="/cv/how-i-rest-from-work/">How I Rest From Work</a>
+        </h2>
+        <p>Fam locavore snackwave bushwick +1 sartorial. Selfies portland knausgaard synth. Pop-up art party marfa deep...</p>
+        <span class="post-date">
+            2017, Sep 12&nbsp;&nbsp;&nbsp;—&nbsp;
+        </span>
+        <!-- <span class="post-words">
+            
+            
+                4 minute read
+            
+        </span> -->
+    </div>
+</article>
+
+  
+</div>
+
+<div class="dash-seperator"></div>
+
+
+<!-- Work -->
+<div id="work" class="content-box clearfix">
+
+  <div class="section-title">
+    <header class="header-page">
+      <h1 class="page-title">Experience</h1>
+    </header>
+  </div>
+
+  
+    <article class="post">
+    
+    <div class="post-content" onclick="location.href='/cv/work2/';">
+        <h2 class="post-title">
+            <a href="/cv/work2/">work 2</a>
+        </h2>
+        <p>2 hmm
 </p>
-    <span class="post-date">2020, Oct 04&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">1 minute read</span>
+        <span class="post-date">
+            2020, Oct 04&nbsp;&nbsp;&nbsp;—&nbsp;
+        </span>
+        <!-- <span class="post-words">
+            
+            
+                1 minute read
+            
+        </span> -->
     </div>
 </article>
 
   
     <article class="post">
     
-    
-    <div class="post-content">
-    <h2 class="post-title"><a href="/cv/work/">work 1</a></h2>
-    <p>WORK yes test tes tse t se t se t se t se t se...</p>
-    <span class="post-date">2020, Oct 02&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">1 minute read</span>
-    </div>
-</article>
-
-  
-  </header></div></div></article>
-  <!-- <div class="container">
-  <nav class="pagination" role="pagination">
-    <ul>
-      
-
-      
-      
-      
-    </ul>
-  </nav>
-</div>
- -->
-</div>
-
-<div class="dash-seperator"></div>
-
-
-<div class="content-box clearfix">
-
-  
-    <article class="post">
-    
-    
-    <div class="post-content">
-    <h2 class="post-title"><a href="/cv/project/">Deep Learning for Tropical Cyclone Rainfall Prediction</a></h2>
-    <p>Project yes test tes tse t se t se t se t se t se...</p>
-    <span class="post-date">2020, Oct 02&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">1 minute read</span>
+    <div class="post-content" onclick="location.href='/cv/work/';">
+        <h2 class="post-title">
+            <a href="/cv/work/">work 1</a>
+        </h2>
+        <p>WORK yes test tes tse t se t se t se t se t se...</p>
+        <span class="post-date">
+            2020, Oct 02&nbsp;&nbsp;&nbsp;—&nbsp;
+        </span>
+        <!-- <span class="post-words">
+            
+            
+                1 minute read
+            
+        </span> -->
     </div>
 </article>
 
@@ -201,6 +333,8 @@
 </div>
  -->
 </div>
+
+
 
 
 
