@@ -1616,7 +1616,7 @@ a.newer-posts:hover {
 .about-nav {
   margin: auto;
   width: 60%;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .about-nav table {
@@ -1657,6 +1657,17 @@ a.newer-posts:hover {
   .section-box {
     padding-left: 3px;
     padding-right: 3px;
+  }
+  .educ-content,
+  .about-content {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .about-nav img {
+    height: 50px;
+    cursor: pointer;
+    /* width: 100px */
   }
 }
 
