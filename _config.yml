@@ -11,7 +11,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Julian Rice
-author-img: julian-rice.jpeg # add your photo
+author-img: julian-rice.jpeg
 about-author: 
   - Deep Learning Researcher for Earth and Atmospheric Sciences
 social-github: jrice15
