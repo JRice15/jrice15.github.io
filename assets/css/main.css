@@ -1176,6 +1176,7 @@ footer .copyright {
   margin: 0 0 10px;
   font-size: 30px;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .post .post-content .post-title a {
@@ -1507,15 +1508,10 @@ a.newer-posts:hover {
 
 .section-box {
   width: 100%;
-  padding: 5px;
-}
-
-.section-title {
-  width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #fff;
   -webkit-border-radius: 10px;
           border-radius: 10px;
@@ -1525,20 +1521,20 @@ a.newer-posts:hover {
   transition: all .3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   /* box-shadow: rgba(0,0,0,0.2) 1px 1px 1px, inset rgba(0,0,0,0.2) 1px 1px 2px; */
 }
 
-.section-title.section-blue {
+.section-box.section-blue {
   border: 2px solid rgba(59, 84, 196, 0.6);
 }
 
-.section-title.section-green {
+.section-box.section-green {
   border: 2px solid rgba(59, 196, 70, 0.6);
 }
 
-.section-title.section-orange {
+.section-box.section-orange {
   border: 2px solid rgba(224, 143, 37, 0.6);
 }
 
@@ -1620,6 +1616,7 @@ a.newer-posts:hover {
 .about-nav {
   margin: auto;
   width: 60%;
+  min-width: 350px;
 }
 
 .about-nav table {
@@ -1654,4 +1651,47 @@ a.newer-posts:hover {
 
 .post-content {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .section-box {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.pub-links {
+  /* margin: auto; */
+  /* width: 100%; */
+  display: flex; justify-content: center;
+}
+
+.pub-links table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  /* width: 100%; */
+  /* margin: 0 40px 0 40px; */
+}
+.pub-links tr {
+  /* width: 100%; */
+}
+
+.pub-links td {
+  position: relative;
+  padding: 0;
+  /* margin: 5px 5px; */
+  /* border-left: 1px solid #4e4e4e;
+  border-right: 1px solid #4e4e4e; */
+  text-align: center;
+}
+
+.pub-links a {
+  font-family: 'PT Serif', serif;
+  text-decoration: none;
+  color: #263959;
+  font-style: normal;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
 }

@@ -22,10 +22,21 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date">
           <span>
-            {{page.start}}&nbsp;&nbsp;&nbsp;—&nbsp;&nbsp;&nbsp;{{page.end}}
+            {% include post_date.html post=page %}
           </span></div>
       </header>
-      {{content | markdownify}}
+      {% if page.links %}
+        <div class="pub-links">
+          <table>
+            <tr>
+              |{% for link in page.links %}
+              <td>&nbsp;&nbsp;&nbsp;<a href="{{link[1]}}">{{link[0] | capitalize}}</a>&nbsp;&nbsp;&nbsp;|</td>
+              {% endfor %}
+            </tr>
+          </table>
+        </div>
+      {% endif %}
+      {{content | markdownify | remove: page.excerpt }}
       <div class="page-footer">
         <div class="page-tag">
           {% for tag in page.tags %}
