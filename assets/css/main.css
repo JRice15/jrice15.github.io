@@ -1684,14 +1684,33 @@ a.newer-posts:hover {
   border-right: 1px solid #4e4e4e; */
   text-align: center;
 }
-
 .pub-links a {
   font-family: 'PT Serif', serif;
+}
+
+.pub-links a,
+.article-page p a {
   text-decoration: none;
-  color: #263959;
+  color: #354f7e;
   font-style: normal;
 }
 
-.pub-links a:hover {
+.pub-links a:hover,
+.article-page p a:hover {
   text-decoration: underline;
+}
+
+/* Images in posts */
+.article-page .wrap-content p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* captions */
+.article-page .wrap-content p img + em {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: normal;
 }

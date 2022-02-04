@@ -36,7 +36,7 @@ layout: main
           </table>
         </div>
       {% endif %}
-      {{content | markdownify | remove: page.excerpt }}
+      {{content | markdownify | remove_first: page.excerpt }}
       <div class="page-footer">
         <div class="page-tag">
           {% for tag in page.tags %}
