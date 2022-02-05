@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Computer Vision for School Safety"
-date: 2022-2-1
+date: 2021-02-01
 img: school-safety-model.png
 tags: [deep-learning, computer-vision]
 start: Fall 2020

@@ -2,7 +2,7 @@
 layout: post
 title: "MIT Quantum Hackathon: Keytanglement"
 coauthor-ack: "with Nayana Tiwari and Alexander Knapen"
-date: 2022-1-10
+date: 2022-01-10
 img: quantum-circuit.png
 tags: [quantum-computing, web-dev]
 start: Feb. 2022
@@ -18,4 +18,4 @@ In a team with two other computer science and physics students at my school, we 
 * Quantum Entanglement, the strange property of quantum particles that makes it so two particles be deterministically related even when seperated by a great distance.
 * Encryption Keys, which can be utilized as a [one-time pad](https://en.wikipedia.org/wiki/One-time_pad) to achieve unbreakable encryption (in theory).
 
-
+I'm not super knowledgable in quantum physics; I was mostly there for my general skill in Python. My main task ended up being coding up and integrating the frontend with all of the backend quantum circuits code that my partners cooked up.

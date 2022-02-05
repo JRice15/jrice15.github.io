@@ -107,7 +107,8 @@ layout: main
     </header>
   </div>
 
-  {% for post in site.categories["work"] %}
+  {% assign these_posts = site.categories["work"] | sort: "date" | reverse %}
+  {% for post in these_posts %}
     {% include post_preview.html post=post %}
   {% endfor %}
   <!-- {% include pagination.html %} -->
@@ -124,7 +125,8 @@ layout: main
     </header>
   </div>
 
-  {% for post in site.categories["projects"] %}
+  {% assign these_posts = site.categories["projects"] | sort: "date" | reverse %}
+  {% for post in these_posts %}
     {% include post_preview.html post=post %}
   {% endfor %}
 </div>
