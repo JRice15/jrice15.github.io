@@ -10,8 +10,8 @@ layout: main
     <div class="page-cover-image">
       <figure>
         <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
-        {% if page.fig-caption %}
-          <figcaption>{{page.fig-caption}}</figcaption>
+        {% if page.img-caption %}
+          <figcaption>{{page.img-caption}}</figcaption>
         {% endif %}
       </figure>
     </div> <!-- End Page Cover Image -->
@@ -20,10 +20,16 @@ layout: main
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
+        {% if page.coauthor-ack %}
+          <div class="coauthor-ack">
+            {{page.coauthor-ack}}
+          </div>
+        {% endif %}
         <div class="page-date">
           <span>
             {% include post_date.html post=page %}
-          </span></div>
+          </span>
+        </div>
       </header>
       {% if page.links %}
         <div class="pub-links">

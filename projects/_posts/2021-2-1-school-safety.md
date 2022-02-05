@@ -11,7 +11,7 @@ links:
  conference: https://scholarworks.calstate.edu/collections/zp38wj490?locale=en
 ---
 
-In collaboration with the World Bank, my group project team for CSC 480 Artificial Intelligence developed a system for classifying the structural integrity of school buildings in developing countries, specifically Kyrgystan.
+Project to develop a deep-learning computer vision system for classifying the structural integrity of school buildings in developing countries, specifically Kyrgystan.
 
 <!--more-->
 

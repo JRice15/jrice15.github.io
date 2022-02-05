@@ -1,0 +1,17 @@
+---
+layout: post
+title: "This Site"
+date: 2022-2-1
+description: "This very website"
+img: site-ception.png
+tags: [web-dev]
+start: Winter 2022
+links:
+    githib (private at the moment): https://github.com/JRice15/jrice15.github.io
+---
+
+A page about the site on which the page is hosted.
+
+A page about the site on which the page is hosted.
+
+I'm not really a web-developer, but this site has been a fun little exercise in the general joy of programming, especially when programming results in something you can see and interact with. I also can't help but think the spit and duct-tape holding the internet together that is CSS could have really been designed much better, as a language.

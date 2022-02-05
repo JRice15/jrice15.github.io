@@ -98,24 +98,6 @@ layout: main
 
 <div class="dash-seperator"></div>
 
-
-<!-- Projects -->
-<div id="projects" class="content-box clearfix">
-
-  <div class="section-box">
-    <header class="header-page">
-      <h1 class="page-title">Projects</h1>
-    </header>
-  </div>
-
-  {% for post in site.categories["projects"] %}
-    {% include post_preview.html post=post %}
-  {% endfor %}
-</div>
-
-<div class="dash-seperator"></div>
-
-
 <!-- Work -->
 <div id="work" class="content-box clearfix">
 
@@ -131,5 +113,19 @@ layout: main
   <!-- {% include pagination.html %} -->
 </div>
 
+<div class="dash-seperator"></div>
 
+<!-- Projects -->
+<div id="projects" class="content-box clearfix">
+
+  <div class="section-box">
+    <header class="header-page">
+      <h1 class="page-title">Projects</h1>
+    </header>
+  </div>
+
+  {% for post in site.categories["projects"] %}
+    {% include post_preview.html post=post %}
+  {% endfor %}
+</div>
 

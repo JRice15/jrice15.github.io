@@ -1229,7 +1229,7 @@ a.newer-posts:hover {
 }
 
 .header-page .page-date {
-  color: #a0a0a0;
+  color: #9c9c9c;
   font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
@@ -1669,6 +1669,18 @@ a.newer-posts:hover {
     cursor: pointer;
     /* width: 100px */
   }
+
+  .article-page .wrap-content p img {
+    width: 100%;
+  }
+}
+
+.header-page .coauthor-ack {
+  color: #9c9c9c;
+  font-weight: 300;
+  font-size: 14px;
+  padding-bottom: 7px;
+  /* text-transform: uppercase; */
 }
 
 .pub-links {
@@ -1702,7 +1714,7 @@ a.newer-posts:hover {
 .pub-links a,
 .article-page p a {
   text-decoration: none;
-  color: #354f7e;
+  color: #345fad;
   font-style: normal;
 }
 

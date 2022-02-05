@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Deep Learning for Remote Detection of Urban Trees"
+coauthor-ack: "Advised by Dr. Jonathan Ventura"
 date: 2022-2-1
 description: "Masters Thesis"
 img: trees-split.png
@@ -11,7 +12,7 @@ links:
     githib (private at the moment): https://github.com/JRice15/trees-pointnet
 ---
 
-My Master's thesis is an ongoing project to explore deep learning techniques for detection of urban trees from LIDAR data.
+Master's thesis, an ongoing project to explore deep learning techniques for detection of urban trees from LIDAR data.
 
 My Master's thesis, advised by [Dr. Jonathan Ventura](https://jonathanventura.github.io), is an ongoing project to explore deep learning techniques for detection of urban trees from LIDAR data.
 
