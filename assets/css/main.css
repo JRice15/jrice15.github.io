@@ -1499,7 +1499,10 @@ a.newer-posts:hover {
 }
 
 
-/* New Things */
+/*  */
+/* Front Page */
+/*  */
+
 
 .dash-seperator {
   border-bottom: 1px dashed #a0a0a0;
@@ -1526,6 +1529,14 @@ a.newer-posts:hover {
   /* box-shadow: rgba(0,0,0,0.2) 1px 1px 1px, inset rgba(0,0,0,0.2) 1px 1px 2px; */
 }
 
+
+.section-box h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-style: italic; */
+  font-weight: bold;
+  /* text-rendering: optimizeLegibility; */
+}
+
 .section-box.section-blue {
   border: 2px solid rgba(59, 84, 196, 0.6);
 }
@@ -1542,6 +1553,10 @@ a.newer-posts:hover {
 .about-content {
   width: 100%;
   padding: 5px 30px;
+}
+
+.about-content p {
+  margin-top: 0px;
 }
 
 .educ-content table {
@@ -1565,7 +1580,7 @@ a.newer-posts:hover {
 
 /* first column */
 .educ-content td:first-child{
-  width: 35%;
+  width: 40%;
   overflow: hidden;
   font-family: 'PT Serif', serif;
   font-size: 16px;
@@ -1578,7 +1593,7 @@ a.newer-posts:hover {
 
 /* last column */
 .educ-content td:last-child{
-  width: 48%;
+  width: 44%;
   overflow: hidden;
   font-family: 'PT Serif', serif;
   font-style: italic;
@@ -1653,13 +1668,118 @@ a.newer-posts:hover {
   cursor: pointer;
 }
 
+
+/* Skills */
+
+.skills-content {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.skill {
+  position: absolute;
+  /* border: 1px solid black; */
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.skill:hover {
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+      transform: translate(0px, -2px);
+}
+
+.skill label {
+  display: block;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  font-style: italic;
+}
+
+.skill:hover label {
+  opacity: 1;
+}
+
+.skill img {
+  height: 100%;
+  margin: auto;
+}
+
+.skill:nth-child(1) {
+  top: 3%;
+  left: 2%;
+  height: 150px;
+}
+
+.skill:nth-child(2) {
+  top: 48%;
+  left: 19%;
+  height: 130px;
+}
+
+.skill:nth-child(3) {
+  top: 0%;
+  left: 33%;
+  height: 120px;
+}
+
+.skill:nth-child(4) {
+  top: 45%;
+  left: 43%;
+  height: 80px;
+}
+
+.skill:nth-child(5) {
+  top: 68%;
+  left: 60%;
+  height: 70px;
+}
+
+.skill:nth-child(6) {
+  top: 10%;
+  left: 60%;
+  height: 90px;
+}
+
+.skill:nth-child(7) {
+  top: 4%;
+  left: 81%;
+  height: 70px;
+}
+
+.skill:nth-child(8) {
+  top: 46%;
+  left: 73%;
+  height: 70px;
+}
+
+.skill:nth-child(9) {
+  top: 59%;
+  left: 88%;
+  height: 60px;
+}
+
+
+
+
+
 @media only screen and (max-width: 480px) {
   .section-box {
     padding-left: 3px;
     padding-right: 3px;
   }
   .educ-content,
-  .about-content {
+  .about-content,
+  .skills-content {
     width: 100%;
     padding: 5px 10px;
   }
@@ -1673,7 +1793,17 @@ a.newer-posts:hover {
   .article-page .wrap-content p img {
     width: 100%;
   }
+
+  .skill {
+    transform: scale(0.7);
+  }
 }
+
+
+
+/*  */
+/* Posts */
+/*  */
 
 .header-page .coauthor-ack {
   color: #9c9c9c;
