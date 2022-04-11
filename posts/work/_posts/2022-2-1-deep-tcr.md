@@ -7,7 +7,7 @@ img: hurricane.jpg
 img-caption: https://www.britannica.com/event/Hurricane-Katrina
 tags: [deep-learning, computer-vision, ocean/atmospheric-science, remote-sensing]
 links:
- paper: /files/Deep_TCR_rev11.pdf
+ paper (draft): /files/Deep_TCR_rev11.pdf
 start: Winter 2021
 end: Present
 ---
