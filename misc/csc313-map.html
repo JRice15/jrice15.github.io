@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <title>My Map</title>
+  </head>
+  <body>
+    <h2>Julian Rice's Map</h2>
+    <p>Locations colored by average yearly high temperature:
+        <ul>
+            <li>Red: 100+</li>
+            <li>Orange: 80-100</li>
+            <li>Green: 60-80 </li>
+        </ul>
+    </p>
+    <div id="map" class="map"></div>
+
+    <script type="text/javascript">
+
+        ol.proj.useGeographic();
+                
+        const radius = 5;
+
+        const highTemp = new ol.style.Style({
+            image: new ol.style.Circle({
+                radius: radius,
+                fill: new ol.style.Fill({color: 'red'})
+            })
+        });
+        const midTemp = new ol.style.Style({
+            image: new ol.style.Circle({
+                radius: radius,
+                fill: new ol.style.Fill({color: 'orange'})
+            })
+        });
+        const lowTemp = new ol.style.Style({
+            image: new ol.style.Circle({
+                radius: radius,
+                fill: new ol.style.Fill({color: 'green'})
+            })
+        });
+
+
+        var glendale = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([-118.24, 34.15]))],
+            }),
+            style: highTemp,
+        });
+        var oakland = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([-122.27, 37.80]))],
+            }),
+            style: lowTemp,
+        });
+        var redondo = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([-118.39, 33.85]))],
+            }),
+            style: lowTemp,
+        });
+        var ashland = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([-122.71, 42.20]))],
+            }),
+            style: midTemp,
+        });
+        var broomfield = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([-105.05, 39.94]))],
+            }),
+            style: midTemp,
+        });
+        var dehli = new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(new ol.geom.Point([77.22, 28.65]))],
+            }),
+            style: highTemp,
+        });
+        
+        var maptile = new ol.layer.Tile({
+            source: new ol.source.OSM()
+        })
+        
+        var map = new ol.Map({
+            target: 'map',
+            layers: [maptile, glendale, oakland, redondo, ashland, broomfield, dehli],
+            view: new ol.View({
+                center: [-120.66, 35.28],
+                zoom: 2
+            })
+        });
+
+    </script>
+
+  </body>
+</html>
